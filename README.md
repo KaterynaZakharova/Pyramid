@@ -1,17 +1,23 @@
-PYRAMID
+# PYRAMID
 
+:exclamation: Play simple **card game**. Choose your game mode *(Dark or Light)*. But first read rules! They are in the Menu.
 
-Rules:
-  The object of the game is to remove pairs of cards that add up to the total of the highest card in the deck from a pyramid arrangement of 28 cards. 
+### :sparkle: Interface of the App
 
-It usually uses the standard 52-card deck, Jacks value at 11, Queens 12, and Kings 13.
+![Interface](pyramid_UI.png)
 
-To set up the pyramid, one card is dealt face up at the top of the playing area, then two cards beneath and partially covering it, then three beneath them, and so on completing with a row of seven cards for a total of 28 cards dealt. The remaining cards are placed to the side face down. This is the Stock. 
+### :sparkle: Architecture
 
-To play, pairs of exposed cards can be removed to the Foundation if their values total 13. Thus, kings can be removed immediately to the Foundation. Cards must not be covered. Thus when an Ace rests on a Queen, that Queen can not be removed. 
+  There are two main classes, which used to describe the architecture of the program:
+  * class **Cards** is responsible for the game behaviour;
+  * class **Pyramid** is responsible for displaying the pyramid of cards.
 
-You may draw cards from the Stock one at a time and match it with any exposed card. If no match is made the drawn Stock card is still discarded into the Foundation. 
+### :sparkle: Structure of the Project
 
-Once the Stock is exhausted and/or no more pairs can be made, the game ends. 
+  There are two files:
+  * **main.py** contains the main functional;
+  * **mainwindow.py** implements UI.
 
-To score, count the number of remaining face up cards in the pyramid. A perfect score is therefore zero, where all cards have been matched into the Foundation.
+:heavy_check_mark: I mastered:
+* Python
+* PyQt5
